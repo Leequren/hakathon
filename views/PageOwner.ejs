@@ -10,30 +10,54 @@
 
 </head>
 <body>
-<div class="menu">
-    <div class="flex">
-        <div>
-            <a class="info" id="info" href="">
-                <div class="white"><img class="miniImg" src="img/userUs.png" alt=""></div>
-            </a>
-            <a class="text_user" href=""><%= user.surname %> <%= user.name[0] %>. <%= user.lastName[0] %>.</a>
+<% if (user.role === 'Владелец') { %>
+    <div class="menu">
+        <div class="flex">
+            <div>
+                <a class="info" id="info" href="">
+                    <div class="white"><img class="miniImg" src="img/userUs.png" alt=""></div>
+                </a>
+                <a class="text_user" href=""><%= user.surname %> <%= user.name[0] %>. <%= user.lastName[0] %>.</a>
+            </div>
+            <a class="navLink" href="/personalArea/fields">Сведения о полях</a>
+            <a class="navLink" href="/personalArea/calls">Сведения о заявках</a>
         </div>
-        <a class="navLink" href="">Календарь</a>
-        <a class="navLink" href="/personalArea/fields">Сведения о полях</a>
-        <a class="navLink" href="">Сведения о заявках</a>
+        <div class="flex menuBotGap">
+            <a href="">
+                <img src="img/path3243.png" alt="">
+            </a>
+            <a href="">
+                8-988-888-88-88
+            </a>
+            <a href="">
+                example@mail.ru
+            </a>
+        </div>
     </div>
-    <div class="flex menuBotGap">
-        <a href="">
-            <img src="img/path3243.png" alt="">
-        </a>
-        <a href="">
-            8-988-888-88-88
-        </a>
-        <a href="">
-            example@mail.ru
-        </a>
+<% } else if(user.role === 'Подрядчик'){ %>
+    <div class="menu">
+        <div class="flex">
+            <div>
+                <a class="info" id="info" href="">
+                    <div class="white"><img class="miniImg" src="img/userUs.png" alt=""></div>
+                </a>
+                <a class="text_user" href=""><%= user.surname %> <%= user.name[0] %>. <%= user.lastName[0] %>.</a>
+            </div>
+            <a class="navLink" href="/personalArea/calls">Сведения о заявках</a>
+        </div>
+        <div class="flex menuBotGap">
+            <a href="">
+                <img src="img/path3243.png" alt="">
+            </a>
+            <a href="">
+                8-988-888-88-88
+            </a>
+            <a href="">
+                example@mail.ru
+            </a>
+        </div>
     </div>
-</div>
+<% } %>
 <div class="user">
     <div class="grayRound">
         <img src="img/userUs.png" alt="">

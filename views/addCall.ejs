@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<div class="formFlex">
+    <form class="registration" id="form" action="123" method="POST">
+        <div class="topForm">
+            Заявка на подрядчика
+        </div>
+        <div class="mainForm inpLogin">
+            <p class="label">e-mail</p>
+            <input class="inp inpLogin" id="email" name="email" type="text" required>
+            <p class="label">№ Поля</p>
+            <input class="inp inpLogin" id="idField" name="idField" type="text" required>
+            <p class="label">Информация о заявке</p>
+            <input class="inp inpLogin" id="info" name="info" type="text" required>
+            <p class="label">Укажите дату</p>
+            <input class="inp inpLogin" id="date" name="date" type="text" required>
+            <button class="inp inpLogin" type="submit">Добавить заявку</button>
+        </div>
+    </form>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../../js/scriptAddCall.js"></script>
+</body>
+</html>

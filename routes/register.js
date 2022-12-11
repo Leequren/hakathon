@@ -28,6 +28,7 @@ router.post('/', async (req, res) => {
             email: data.email,
             name: data.firstName,
             surname: data.secondName,
+            lastName: data.lastName,
             role: data.type
         }
         req.session.save(err => {

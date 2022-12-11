@@ -42,7 +42,7 @@ app.use('/logout', require('./routes/logout'))
 app.use('/api', checkAuth, require('./routes/api'))
 app.use('/', require('./routes/indexPage'))
 app.use('/personalArea', require('./routes/allFields'))
-
+app.use('/personalArea', require('./routes/infoAboutCalls'))
 const PORT = process.env.PORT || 4500
 
 app.listen(PORT, () => console.log(`Сервер на работе :D ${PORT}`))

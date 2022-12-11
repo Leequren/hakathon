@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="../css/styleAllFields.css">
+    <link rel="stylesheet" href="../../css/styleCalls.css">
 
 </head>
 <body>
@@ -15,10 +15,13 @@
         <div class="nav_conatainer">
             <div class="user_container">
                 <div class="user_cont_2">
-                    <a href=""><img class="user_img" src="../img/icon_user.svg" alt=""></a>
+                    <a href=""><img class="user_img" src="../../img/icon_user.svg" alt=""></a>
                 </div>
-                <a class="text_user" href="/personalArea"><%= user.surname %> <%= user.name[0] %>
-                    . <%= user.lastName[0] %>.</a>
+                <a class="text_user" href="/personalArea">
+                    <%= user.surname %>
+                    <%= user.name[0] %>.
+                    <%= user.lastName[0] %>.
+                </a>
             </div>
             <% if(user.role === 'Владелец'){ %>
                 <div class="field_container">
@@ -53,7 +56,7 @@
     </div>
     <div class="container_inf2">
         <div class="title_cont">
-            <p class="title_text">Сведения о полях</p>
+            <p class="title_text">Сведения о заявках</p>
         </div>
     </div>
     <div class="container_inf3">
@@ -63,28 +66,26 @@
                     <thead>
                     <tr>
                         <th>№</th>
-                        <th>Названия</th>
-                        <th>Площадь</th>
+                        <th>Статус</th>
                     </tr>
                     </thead>
 
                     <tbody>
-                    <% for(let i = 0; i < fields.length; ++i){ %>
+                    <% for(let i = 0; i < calls.length; ++i){ %>
                         <tr>
-                            <td><%= fields[i].id %></td>
-                            <td><a href="field/<%= fields[i].id %>"><%= fields[i].name %></a></td>
-                            <td><%= fields[i].square %></td>
+                            <td><a class="one" href="/personalArea/call/<%= calls[i].id %>"><%= calls[i].id %></a></td>
+                            <td><%= calls[i].status %></td>
                         </tr>
                     <% } %>
-
                     </tbody>
                 </table>
             </div>
         </div>
-        <div class="btn_cont">
-            <a class="btn" href="/personalArea/addField">Добавить поле</a>
-            <!--            <button>Удалить поле</button>-->
-        </div>
+        <% if(user.role === 'Владелец'){ %>
+            <div class="btn_cont">
+                <button><a href="/personalArea/addCall">Добавить заявку</a></button>
+            </div>
+        <% } %>
     </div>
 </section>
 </body>

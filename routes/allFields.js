@@ -6,7 +6,7 @@ router.get('/fields', async (req, res) => {
     const fields = await Field.find({emailOwner: req.session.info.email})
     const user = await User.findOne({email: req.session.info.email})
     console.log(fields)
-    res.render('allFields', {fields: fields, surname: user.surname, name: user.name, lastName: user.lastName})
+    res.render('allFields', {fields: fields, user: user})
 })
 router.get('/addField', (req, res) => {
     res.render('addNewField')

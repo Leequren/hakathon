@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800;900&family=Playfair+Display:wght@400;500&family=Silkscreen&display=swap');
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.container_menu {
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(23, 22, 22, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav_container {
+    width: 300px;
+    height: 400px;
+}
+.user_container {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.user_img {
+    width: 18px;
+    height: 24px;
+}
+.user_cont_2 {
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_user {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+.text_nav {
+    text-decoration: none;
+    color: white;
+    font-family: "Monteserrat", sans-serif;
+
+}
+.sup_container {
+    width: 400px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.text_sup {
+    text-decoration: none;
+    color: white;
+    font-family: "Monteserrat", sans-serif;
+}
+svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+.cal_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-top: 1px solid white;
+    padding-top: 15px;
+}
+.field_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-top: 1px solid white;
+    padding-top: 15px;
+}
+.req_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.text_sup:hover {
+    text-decoration: none;
+    color: rgba(217, 217, 217, 1);
+    font-family: "Monteserrat", sans-serif;
+}
+.text_nav:hover {
+    text-decoration: none;
+    color: rgba(217, 217, 217, 1);
+    font-family: "Monteserrat", sans-serif;
+
+}
+.text_user:hover {
+    text-decoration: none;
+    color: rgba(217, 217, 217, 1);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+svg:hover {
+    fill: rgba(217, 217, 217, 1);
+    width: 30px;
+    height: 30px;
+}
+.main_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.date_container {
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;    
+}
+.text_date {
+    font-size: 20px;
+    font-family: "Monteserrat", sans-serif;
+}
+.calendar_container {
+    width: 800px;
+    height: 500px;
+    background-color: rgba(23, 22, 22, 1);
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendar {
+    justify-content: space-between;
+    background-color: white;
+    width: 700px;
+    height: 400px;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+/* .day:last-child {
+    margin-right: auto;
+    margin-left: 5px;
+} */
+.field_select_container {
+
+    top: 80px;
+}
+.field_select {
+    width: 120px;
+}
+.user_container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.title_text {
+    font-size: 30px;
+    font-family: "Monteserrat", sans-serif;
+}
+.selector_month {
+    fill: black;
+    width: 20px;
+    height: 15px;
+}
+.selector_month:hover {
+    fill: black;
+    width: 20px;
+    height: 15px;
+}
+.nav_calendar_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+    align-self: center;
+    align-items: center;
+}
+
+.arrow_month {
+    display: flex;
+}
+
+.arrow_month button {
+    height: 20px;
+    align-self: center;
+}
+
+.monthNumber {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.main-flex{
+    /*display: flex;*/
+    /*justify-content: center;*/
+    width: 90%;
+    margin: 0 auto;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}

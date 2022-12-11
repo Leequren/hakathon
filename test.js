@@ -2,12 +2,12 @@ const mongoose = require('mongoose')
 const {db} = require('./config/dbInf')
 const User = require('./models/User')
 const Field = require('./models/Field')
+const Call = require('./models/Call')
 
 async function main() {
     await mongoose.connect(db);
-    // console.log(Field.find({}))
-    const arr = await Field.find({})
-    console.log(arr[0].id)
+    console.log(await User.find({}))
+
     // console.log(DB.)
 }
 

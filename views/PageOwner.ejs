@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/pageOwner.css">
+
+</head>
+<body>
+<div class="menu">
+    <div class="flex">
+        <div>
+            <a class="info" id="info" href="">
+                <div class="white"><img class="miniImg" src="img/userUs.png" alt=""></div>
+            </a>
+            <a class="text_user" href=""><%= user.surname %> <%= user.name[0] %>. <%= user.lastName[0] %>.</a>
+        </div>
+        <a class="navLink" href="">Календарь</a>
+        <a class="navLink" href="/personalArea/fields">Сведения о полях</a>
+        <a class="navLink" href="">Сведения о заявках</a>
+    </div>
+    <div class="flex menuBotGap">
+        <a href="">
+            <img src="img/path3243.png" alt="">
+        </a>
+        <a href="">
+            8-988-888-88-88
+        </a>
+        <a href="">
+            example@mail.ru
+        </a>
+    </div>
+</div>
+<div class="user">
+    <div class="grayRound">
+        <img src="img/userUs.png" alt="">
+    </div>
+    <table>
+        <tbody>
+        <tr>
+            <td>Фамилия</td>
+            <td><%= user.surname %></td>
+        </tr>
+        <tr>
+            <td>Имя</td>
+            <td><%= user.name %></td>
+        </tr>
+        <tr>
+            <td>Отчество</td>
+            <td><%= user.lastName %></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td><%= user.email %></td>
+        </tr>
+        <tr>
+            <td>Номер телефона</td>
+            <td><%= user.phone %></td>
+        </tr>
+        <tr>
+            <td>Роль</td>
+            <td><%= user.role %></td>
+        </tr>
+        </tbody>
+    </table>
+    <a class="btn" href="/logout" style="margin-top:20px; width: 15%;">Выйти</a>
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>

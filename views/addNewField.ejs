@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/styleNewField.css">
+</head>
+<body>
+<div class="formFlex">
+    <form class="registration" id="form" action="123" method="POST">
+        <div class="topForm">
+            Добавить поле
+        </div>
+        <div class="mainForm inpLogin">
+            <p class="label">Название поля</p>
+            <input class="inp inpLogin" name="nameField" id="field" type="text">
+            <p class="label">Широта</p>
+            <input class="inp inpLogin" id="latitude" name="latitude" type="text" required>
+            <p class="label">Долгота</p>
+            <input class="inp inpLogin" id="longitude" name="longitude" type="text" required>
+            <p class="label">Площадь</p>
+            <input class="inp inpLogin" id="area" name="area" type="text" required>
+            <p class="label">Инфо о технике</p>
+            <input class="inp inpLogin" id="tech" name="tech" type="text" required>
+            <p class="label">Инфо об удобрениях</p>
+            <input class="inp inpLogin" id="fertilizer" name="fertilizer" type="text" required>
+            <button class="inp inpLogin" type="submit">Добавить поле</button>
+        </div>
+    </form>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../../js/addNewFieldScript.js"></script>
+</body>
+</html>

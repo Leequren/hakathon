@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&family=Roboto&family=Roboto+Slab:wght@400;700&family=Train+One&display=swap');
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    display: flex;
+}
+
+.miniImg {
+    width: 18px;
+    height: 24px;
+}
+
+.menu {
+    height: calc(100vh - 54px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    padding: 26px;
+    max-width: 300px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex div {
+    margin-bottom: 12px;
+}
+
+.white {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    gap: 18px;
+}
+
+.info p {
+    width: 140px;
+}
+
+.navLink {
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+.navLink:first-of-type {
+    border-top: 1px solid white;
+}
+
+.menuBotGap {
+    gap: 20px;
+}
+
+.grayRound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    background-color: #d9d9d9;
+    margin-bottom: 50px;
+}
+
+.grayRound img {
+    width: 80px;
+    height: 106.6;
+}
+
+.user {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pUser {
+    width: 140px;
+    padding: 10px 20px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+}
+
+.pInfo {
+    text-align: center;
+}
+
+.flex2 {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+table {
+    width: 60%
+}

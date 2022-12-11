@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="formFlex">
+    <form class="registration" id="form" action="123" method="POST">
+        <div class="topForm">
+            <label>
+                <input class="radio" type="radio" name="type" value="Владелец" checked>
+                <p class="radioText">Владелец</p>
+            </label>
+            <label>
+                <input class="radio" type="radio" name="type" value="Подрядчик">
+                <p class="radioText">Подрядчик</p>
+            </label>
+        </div>
+        <div class="mainForm inpLogin">
+            <p class="label">Email</p>
+            <input class="inp inpLogin" id="email" name="email" type="email" required>
+            <p class="label">Пароль</p>
+            <input class="inp inpLogin" id="password" name="password" type="password" required>
+            <div class="alert" id="alert"></div>
+            <button class="inp" type="submit">Вход</button>
+        </div>
+    </form>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/scriptLogin.js"></script>
+</body>
+</html>
